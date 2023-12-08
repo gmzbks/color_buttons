@@ -5,22 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button</title>
-    <style>
-        div {
-            width: 100vw;
-            height: 100vh;
-            background-color: rgb(255, 111, 0);
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
+    <link rel="stylesheet" href="styles.css">
 
-        .button {
-            width: 200px;
-            height: 100px;
-            background-color: rgb(128, 128, 128);
-        }
-    </style>
 </head>
 
 <body>
@@ -30,27 +16,8 @@
 
 
     </div>
-    <script>
-        const changeColor = (btn1, btn2) => {
-
-            let button = document.getElementById(btn2, btn1);
-
-            let resultButton = getComputedStyle(button);
-
-            if (resultButton.backgroundColor === "rgb(128, 128, 128)") {
-                button.style.backgroundColor = "rgb(0, 128, 0)";
-
-            }
-
-            else {
-                button.style.backgroundColor = "rgb(128, 128, 128)";
-
-            }
-
-        };
-
-
-    </script>
+   
+    <script src="script.js" defer></script>
 </body>
 
 </html>
